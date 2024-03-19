@@ -1,0 +1,21 @@
+
+<div class="controller-container p-4 max-w-sm mx-auto">
+    <!-- Vehicle Selection -->
+    <div class="mb-4">
+        <label for="vehicle-select" class="block text-gray-700 text-sm font-bold mb-2">Select Vehicle:</label>
+          <app-vehicle-selector></app-vehicle-selector>
+    </div>
+
+    <!-- Starting Point Selection -->
+    <div class="mb-4">
+        <label for="start-point" class="block text-gray-700 text-sm font-bold mb-2">Starting Point:</label>
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" #startInput id="startInput" type="text" placeholder="Enter your location">
+    </div>
+
+    <!-- Endpoint Selection -->
+    <div class="mb-4">
+        <label for="end-point" class="block text-gray-700 text-sm font-bold mb-2">End Point:</label>
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" #arrivalInput id="arrivalInput" type="text" placeholder="Enter your location">
+    </div>
+
+</div>
