@@ -3,12 +3,12 @@
     (input)="updateSearch($event)">
     <!-- Vehicle Image and Name -->
     <div class="mb-4">
-      <img [src]="selectedVehicle?.media?.image?.thumbnail_url ?? 'fallback-url.jpg'" alt="Vehicle Image" class="w-full h-auto rounded-lg">
+      <img [src]="selectedVehicle.media.image.thumbnail_url" alt="Vehicle Image" class="w-full h-auto rounded-lg">
       <ng-template #noImage>
         <img src="placeholder-image-url.jpg" alt="No Image Available" class="w-full h-auto rounded-lg">
       </ng-template>
-      <h3 class="text-xl font-semibold mt-2">{{ selectedVehicle?.naming?.model ?? 'loading' }}</h3>
-      <h1 class="text-sm font-semibold mt-2">{{"Best: " + selectedVehicle?.range?.chargetrip_range?.best +"km" ?? 'loading'}}</h1>
+      <h3 class="text-xl font-semibold mt-2">{{ selectedVehicle.naming.model}}</h3>
+      <h1 class="text-sm font-semibold mt-2">{{"Best: " + selectedVehicle.range.chargetrip_range.best +"km"}}</h1>
     </div>
   
     <!-- Previous and Next Buttons -->

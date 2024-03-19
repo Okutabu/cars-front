@@ -1,7 +1,5 @@
 
-import { AfterViewInit, Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import * as L from 'leaflet';
-import "leaflet/dist/leaflet.css";
+import { AfterViewInit, Component, ViewChild, ElementRef } from '@angular/core';
 import { MapData } from '../types/mapdata.model';
 //store
 import { Store } from '@ngrx/store';
@@ -9,7 +7,6 @@ import { Observable } from 'rxjs';
 import { AppState } from '../store/app.state';
 import { selectMapData } from '../store/map.selectors';
 import { AsyncPipe } from '@angular/common';
-import { selectWorstCarRange } from '../store/car.selectors';
 
 
 @Component({
